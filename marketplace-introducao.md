@@ -10,6 +10,6 @@ A verificação do cadastro do cliente é feita por uma consulta do CPF do clien
 
 Para realizar a integração de forma correta, é necessário incluir um script após o processamento da transação, e também incluir a chamada do plugin no final da página.
 
-> **Para esta integração, deverá ser feito uso da API de Transação, clique [aqui](https://intermediador.dev.yapay.com.br/#/api-consultar-transacao) e veja a documentação.**
+> **Para esta integração, deverá ser feito uso da API de Transação, clique [aqui](api-consultar-transacao.md) e veja a documentação.**
 
-> **Para facilitar a exibição do parcelamento no Marketplace, veja a documentação da API de [Simulação de Parcelamento](https://intermediador.dev.yapay.com.br/#/api-simulacao-parcelamento).**
+> **Para facilitar a exibição do parcelamento no Marketplace, veja a documentação da API de [Simulação de Parcelamento](api-simulacao-parcelamento.md).**

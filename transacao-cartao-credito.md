@@ -3,9 +3,9 @@
 
 Uma das funcionalidades do Yapay Intermediador é criação de transações pela API de Transação com o meio de pagamento **Cartão de Crédito**.
 
-É de extrema importância a utilização do nosso Fingerprint, visto que é uma importante ferramenta no processo de análise antifraude das transações criadas em sua loja. Você pode entender mais do sobre o Fingerprint clicando [aqui](https://intermediador.dev.yapay.com.br/#/transacao-fingerprint)
+É de extrema importância a utilização do nosso Fingerprint, visto que é uma importante ferramenta no processo de análise antifraude das transações criadas em sua loja. Você pode entender mais do sobre o Fingerprint clicando [aqui](transacao-fingerprint.md)
 
-Você pode visualizar os ID's referente as formas de pagamento na nossa <a href="/#/tabelas?id=tabela-3-formas-de-pagamento">Tabela Auxiliar 3 - Formas de Pagamento</a>
+Você pode visualizar os ID's referente as formas de pagamento na nossa [Tabela Auxiliar 3 - Formas de Pagamento](tabelas.md#tabela-3-formas-de-pagamento)
 
 Durante os testes em Sandbox, as compras que forem processadas com cartões de crédito poderão ser aprovadas ou reprovadas em tempo real. Este procedimento poderá ser realizado de acordo com o parcelamento escolhido:
 

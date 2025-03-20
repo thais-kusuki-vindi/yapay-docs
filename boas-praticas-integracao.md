@@ -1,6 +1,6 @@
 ## Boas Práticas de Integração
 
-Nesse artigo será possível verificar algumas dicas para integração com a nossa [API de Transação](https://intermediador.dev.yapay.com.br/#/transacao-introducao). É importante seguir este artigo e validar antes de enviar as transações para análise dos parâmetros de criação para o email [integracao@yapay.com.br](mailto:integracao@yapay.com.br).
+Nesse artigo será possível verificar algumas dicas para integração com a nossa [API de Transação](transacao-introducao.md). É importante seguir este artigo e validar antes de enviar as transações para análise dos parâmetros de criação para o email [integracao@yapay.com.br](mailto:integracao@yapay.com.br).
 
 
 ## Recomendações de validações de envio de parâmetros
@@ -57,12 +57,12 @@ Para criar uma transação nós precisamos de alguns campos obrigatórios, esses
 
 > **Parâmetro finger_print**
 
-O parâmetro `finger_print` é de extrema importância nas transações de cartão de crédito, deve ser enviado em TODAS as transações que sejam cartão. Veja como implementa-lo clicando [aqui](https://intermediador.dev.yapay.com.br/#/transacao-fingerprint).
+O parâmetro `finger_print` é de extrema importância nas transações de cartão de crédito, deve ser enviado em TODAS as transações que sejam cartão. Veja como implementa-lo clicando [aqui](transacao-fingerprint.md).
 
 
 > **Parâmetros de Pagamento**
 
-**payment[payment_method_id]** Deve ser verificada a tabela [Formas de Pagamentos](https://intermediador.dev.yapay.com.br/#/tabelas?id=tabela-3-formas-de-pagamento) aceitas pela Yapay.
+**payment[payment_method_id]** Deve ser verificada a tabela [Formas de Pagamentos](tabelas.md#tabela-3-formas-de-pagamento) aceitas pela Yapay.
 
 **payment[split]** Algumas formas de pagamento não aceitam parcelamento, apenas à vista, deve ser validado se o payment[payment_method_id] for igual a 5 ou 19 e apenas apresentar uma parcela.
 
