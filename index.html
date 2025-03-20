@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MCMFZ82');
+    </script>
+    <!-- End Google Tag Manager -->
+  
+  <meta charset="UTF-8">
+  <title>Documentação Desenvolvedores - Yapay Pagamentos</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">  
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/faviconX144.png">
+  <link rel="apple-touch-icon" href="images/favicon/favicon.png">
+  
+  
+<!--   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff"> -->
+
+  <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/js/main.js"></script>
+   
+
+</head>
+<body>
+  
+   <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCMFZ82" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+  <nav>
+    <a href="#/">Intermediador</a>
+<!--     <a href="https://gateway.dev.yapay.com.br/">Gateway</a> -->
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      ga: 'UA-31834726-7',
+      auto2top: true,
+      name: 'Intermediador',
+      repo: '',
+      loadSidebar: true,
+      executeScript: true,
+      loadNavbar: true,
+      subMaxLevel: 0,
+      coverpage: false,
+      search: {
+        noData: {
+          '/': 'Sem resultados!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Busca'
+        }
+      },
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script> -->
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+
+  <!-- Botão de Compra -->
+  <script src="https://images.tcdn.com.br/static_inst/tc/tray-cdn/uploads/jquery.maskMoney.js"></script> 
+  <script src="/js/highlight.pack.js"></script>        
+
+
+
+  <script>
+    if (!String.prototype.trim) {
+      String.prototype.trim = function () {
+        return this.replace(/^[suFEFFxA0]+|[suFEFFxA0]+$/g, '');
+      };
+    }
+    function empty(mixed_var) {
+      var undef, key, i, len;
+      var emptyValues = [undef, null, false, 0, '', '0'];
+      for (i = 0, len = emptyValues.length; i < len; i++) {
+        if (mixed_var === emptyValues[i]) {
+          return true;
+        }
+      }
+      if (typeof mixed_var === 'object') {
+        for (key in mixed_var) {
+          return false;
+        }
+        return true;
+      }
+      return false;
+    }
+  </script>
+  <!-- Fim Botão de Compra -->
+
+
+</body>
+</html>
